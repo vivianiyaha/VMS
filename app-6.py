@@ -25,24 +25,13 @@ from modules import reports
 
 LAGOS_TZ = pytz.timezone("Africa/Lagos")
 
-# ── COMPANY LOGO (base64 SVG — no external file needed) ─────────────────────
-LOGO_SVG = """
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="180" height="54">
-  <rect width="200" height="60" rx="8" fill="#1a2744"/>
-  <circle cx="30" cy="30" r="18" fill="#22c55e"/>
-  <text x="30" y="36" font-family="Arial,sans-serif" font-size="18"
-        font-weight="bold" fill="white" text-anchor="middle">F</text>
-  <text x="115" y="24" font-family="Arial,sans-serif" font-size="13"
-        font-weight="bold" fill="white" text-anchor="middle">FEDEL</text>
-  <text x="115" y="40" font-family="Arial,sans-serif" font-size="9"
-        fill="#94a3b8" text-anchor="middle">SOLUTIONS LIMITED</text>
-  <line x1="58" y1="10" x2="58" y2="50" stroke="#334155" stroke-width="1"/>
-</svg>
-"""
-
+# ─────────────────────────────────────────────
+# PAGE CONFIG
+# ─────────────────────────────────────────────
+l
 st.set_page_config(
     page_title="Fedel Solutions — Smart VMS",
-    page_icon="🏢",
+    page_icon="static/logo.png" if os.path.exists("static/logo.png") else "🏢",
     layout="wide",
     initial_sidebar_state="expanded",
 )
