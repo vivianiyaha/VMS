@@ -314,14 +314,6 @@ def page_login():
                     st.error("Invalid credentials. Please try again.")
                     db.log_audit(username, "FAILED_LOGIN", "Invalid credentials")
 
-        st.markdown("""
-        <div style="text-align:center;margin-top:16px;padding:12px;background:#f8fafc;border-radius:8px">
-            <p style="font-size:.8rem;color:#64748b;margin:0">
-                Default credentials: <strong>admin</strong> / <strong>Admin@123</strong>
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
-
 
 # ╔══════════════════════════════════════════════════════════════════════════╗
 # ║  PAGE: CHANGE PASSWORD                                                   ║
