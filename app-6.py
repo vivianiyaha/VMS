@@ -28,7 +28,6 @@ LAGOS_TZ = pytz.timezone("Africa/Lagos")
 # ─────────────────────────────────────────────
 # PAGE CONFIG
 # ─────────────────────────────────────────────
-l
 st.set_page_config(
     page_title="Fedel Solutions — Smart VMS",
     page_icon="static/logo.png" if os.path.exists("static/logo.png") else "🏢",
